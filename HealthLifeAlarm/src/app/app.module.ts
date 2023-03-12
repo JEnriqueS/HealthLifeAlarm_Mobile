@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Hamburger_MenuModule } from './hamburger_menu/hamburger_menu.module';
 import { LoginModule } from './login/login.module';
+import { RecuperarClaveModule } from './recuperarClave/recuperarClave.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginModule } from './login/login.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     Hamburger_MenuModule,
-    LoginModule
+    LoginModule,
+    RecuperarClaveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
