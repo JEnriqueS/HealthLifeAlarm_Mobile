@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Hamburger_MenuModule } from './hamburger_menu/hamburger_menu.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Hamburger_MenuModule } from './hamburger_menu/hamburger_menu.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    Hamburger_MenuModule
+    Hamburger_MenuModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

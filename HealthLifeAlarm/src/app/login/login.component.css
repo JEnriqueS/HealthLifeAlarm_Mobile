@@ -1,0 +1,64 @@
+.row{
+  height:100px;
+}
+
+#titulo{
+  margin-bottom: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+#textfield{
+  text-align: center;
+  margin-top: 20%;
+}
+
+#usuario, #clave{
+  text-align: center;
+}
+
+input{
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#olvideClave{
+  text-align: center;
+  margin-top: 20%;
+}
+
+.col-6{
+  margin-top: 10%;
+}
+
+button{
+  height: 30px;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+}
+
+body{
+  background-color: #F3F3E6;
+}
+
+paper-button {
+  text-transform: none;
+}
+
+
+
+
+
+
+
+
+* {
+ font-family: "Perpetua Titling MT", serif;
+}
