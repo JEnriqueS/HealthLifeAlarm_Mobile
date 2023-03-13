@@ -19,25 +19,25 @@
     </div>
     <div class="row">
       <div id="textfield">
-        <input type="text" id="usuario" name="usuario" value="Usuario">
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario">
       </div>
     </div>
     <div class="row">
       <div id="textfield">
-        <input type="text" id="clave" name="clave" value="Contraseña">
+        <input type="text" id="clave" name="clave" placeholder="Contraseña">
       </div>
     </div>
     <div class="row">
       <div id="olvideClave">
-        <p>Olvidé mi clave</p>
+        <p [routerLink]="['/recuperar_clave']">Olvidé mi clave</p>
       </div>
     </div>
     <div class="row mx-auto">
       <div class="col-6">
-        <button type="button">REGÍSTRESE</button>
+        <button type="button" [routerLink]="['/crear_cuenta']">REGÍSTRESE</button>
       </div>
       <div class="col-6">
-        <button type="button">INICIAR SESIÓN</button>
+        <button type="button" [routerLink]="['/mis_habitos']">INICIAR SESIÓN</button>
       </div>
     </div>
 

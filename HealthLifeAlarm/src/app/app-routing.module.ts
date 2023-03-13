@@ -4,6 +4,9 @@ import { AlarmasComponent } from './alarmas/alarmas.component';
 import { LoginComponent } from './login/login.component';
 import { Mis_habitosComponent } from './mis_habitos/mis_habitos.component';
 import { Mi_progresoComponent } from './mi_progreso/mi_progreso.component';
+import { Crear_cuentaComponent } from './crear_cuenta/crear_cuenta.component';
+import { RecuperarClaveComponent } from './recuperarClave/recuperarClave.component';
+import { Eliminar_cuentaComponent } from './eliminar_cuenta/eliminar_cuenta.component';
 
 const routes: Routes = [
   {
@@ -24,6 +27,21 @@ const routes: Routes = [
   {
     path: 'alarmas',
     component: AlarmasComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'crear_cuenta',
+    component: Crear_cuentaComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'recuperar_clave',
+    component: RecuperarClaveComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'eliminar_cuenta',
+    component: Eliminar_cuentaComponent,
     pathMatch: 'full'
   }
 ];
