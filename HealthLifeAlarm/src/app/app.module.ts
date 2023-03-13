@@ -9,6 +9,8 @@ import { RecuperarClaveModule } from './recuperarClave/recuperarClave.module';
 import { Mis_habitosModule } from './mis_habitos/mis_habitos.module';
 import { Mi_progresoModule } from './mi_progreso/mi_progreso.module';
 import { AlarmasModule } from './alarmas/alarmas.module';
+import { Eliminar_cuentaModule } from './eliminar_cuenta/eliminar_cuenta.module';
+import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { AlarmasModule } from './alarmas/alarmas.module';
     RecuperarClaveModule,
     Mis_habitosModule,
     Mi_progresoModule,
-    AlarmasModule
+    AlarmasModule,
+    Eliminar_cuentaModule,
+    Crear_cuentaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

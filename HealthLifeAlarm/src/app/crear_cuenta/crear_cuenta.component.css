@@ -1,0 +1,128 @@
+h2{
+  text-align: center;
+  color: #3AC43A;
+  font-size: 30px;
+}
+
+#ingresarDatos{
+  text-align: center;
+}
+
+#crear{
+  margin-top: 15px;
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#hint{
+  color: gray;
+  font-size: 8px;
+  margin-bottom: 0px;
+}
+
+#opcionales{
+  color: #3AC43A;
+  font-size: 8px;
+  margin-top: 15px;
+}
+
+p{
+  color: #3AC43A;
+  font-weight: bold;
+  text-align: center;
+}
+
+#confirmarEliminar{
+  text-align: center;
+}
+
+.col-6{
+  padding-left: 13%;
+}
+
+#birth, #sexo, #genero{
+  color: gray;
+  font-size: 8px;
+}
+
+#nacimiento{
+  width: 100px;
+  font-size: 0.75em;
+  text-align: center;
+  height: 35px;
+  border: none;
+}
+
+#radioSexo{
+  display: inline;
+  margin-right: 20px;
+}
+
+#lista{
+  display: inline-block;
+}
+
+#generos{
+  color: #3AC43A;
+  font-size: 0.75em;
+}
+
+#labelRadio{
+  color: #3AC43A;
+  font-size: 8px;
+  margin-top: 15px;
+}
+
+#datosOpcionales{
+  margin-left: 10%;
+}
+
+.col-3{
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
+
+#radio{
+  width: auto;
+  padding-left: 10%;
+}
+
+button{
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+#buttons{
+  margin-bottom: 5%;
+}
+
+#btn_volver{
+  background-color: white;
+  color: #3AC43A;
+  box-shadow:inset 2px 2px 2px 2px #E6E7E6;
+}
+
+#btn_confirmar{
+  background-color: #3AC43A;
+  color: white;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+}
+
+body{
+  background-color: #F3F3E6;
+  margin:0px;
+  padding:0px;
+  height: 100%;
+}
+
+* {
+ font-family: "Perpetua Titling MT", serif;
+
+}
