@@ -26,7 +26,12 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <main>
-        Contenido de la página
+        <mat-list>
+          <div><mat-list-item>Ejercicio</mat-list-item></div><div class="parent"><mat-chip><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+          <div><mat-list-item>Meditar</mat-list-item></div><div class="parent"><mat-chip><mat-icon>add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip><mat-icon>alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon>do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+          <div><mat-list-item>Leer</mat-list-item></div><div class="parent"><mat-chip><mat-icon>add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip><mat-icon>alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon>do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+        </mat-list>
+        <button type="button" class="botonAppSolo">AGREGAR HÁBITO</button>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>

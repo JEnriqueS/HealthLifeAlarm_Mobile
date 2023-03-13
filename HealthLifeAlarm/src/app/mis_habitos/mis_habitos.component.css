@@ -63,3 +63,34 @@ a {
   color: #ffffff;
   font-size: large;
 }
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.mat-mdc-standard-chip {
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-elevated-container-color: #3ac43a;
+}
+
+.botonAppSolo{
+  height: 40px;
+  width: 80%;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
