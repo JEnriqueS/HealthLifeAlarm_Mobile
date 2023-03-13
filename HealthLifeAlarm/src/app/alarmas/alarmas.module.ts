@@ -5,11 +5,20 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { AppRoutingModule } from '../app-routing.module';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatTableModule} from '@angular/material/table';
+
 
 const uiModules = [
   MatSidenavModule,
   MatIconModule,
-  MatButtonModule
+  MatButtonModule,
+  MatDividerModule,
+  MatListModule,
+  MatChipsModule,
+  MatTableModule
 ];
 
 @NgModule({

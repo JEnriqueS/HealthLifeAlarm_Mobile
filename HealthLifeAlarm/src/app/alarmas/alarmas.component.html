@@ -17,7 +17,7 @@
         <p style="margin-left: 5%;">Usuario</p>
       </div>
       <hr>
-      <a mat-button routerLink="/page1"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
       <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
       <a mat-button routerLink="/page3"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
       <a mat-button routerLink="/page4"><mat-icon>manage_accounts</mat-icon>Acutalizar Datos</a>
@@ -26,7 +26,16 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <main>
-        Contenido de la página
+        <div class="page-title">Nombre del Hábito</div>
+        <br><br>
+        <mat-list>
+          <div class="parentShort"><mat-list-item>Correr</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Nadar</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Gimnasio</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Yoga</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+        </mat-list>
+        <button type="button" class="botonAppDos" [routerLink]="['/mis_habitos']">VOLVER</button>
+        <button type="button" class="botonAppDos"  [routerLink]="['/crear-alarma']">CREEAR ALARMA</button>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>

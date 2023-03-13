@@ -17,7 +17,7 @@
         <p style="margin-left: 5%;">Usuario</p>
       </div>
       <hr>
-      <a mat-button routerLink="/page1"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
       <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
       <a mat-button routerLink="/page3"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
       <a mat-button routerLink="/page4"><mat-icon>manage_accounts</mat-icon>Acutalizar Datos</a>
@@ -27,9 +27,9 @@
     <mat-sidenav-content>
       <main>
         <mat-list>
-          <div><mat-list-item>Ejercicio</mat-list-item></div><div class="parent"><mat-chip><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
-          <div><mat-list-item>Meditar</mat-list-item></div><div class="parent"><mat-chip><mat-icon>add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip><mat-icon>alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon>do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
-          <div><mat-list-item>Leer</mat-list-item></div><div class="parent"><mat-chip><mat-icon>add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip><mat-icon>alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon>do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+          <div><mat-list-item>Ejercicio</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+          <div><mat-list-item>Meditar</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+          <div><mat-list-item>Leer</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
         </mat-list>
         <button type="button" class="botonAppSolo">AGREGAR HÁBITO</button>
       </main>
