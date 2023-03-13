@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginModule } from './login/login.module';
 import { RecuperarClaveModule } from './recuperarClave/recuperarClave.module';
 import { Mis_habitosModule } from './mis_habitos/mis_habitos.module';
+import { Mi_progresoModule } from './mi_progreso/mi_progreso.module';
+import { AlarmasModule } from './alarmas/alarmas.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { Mis_habitosModule } from './mis_habitos/mis_habitos.module';
     BrowserAnimationsModule,
     LoginModule,
     RecuperarClaveModule,
-    Mis_habitosModule
+    Mis_habitosModule,
+    Mi_progresoModule,
+    AlarmasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

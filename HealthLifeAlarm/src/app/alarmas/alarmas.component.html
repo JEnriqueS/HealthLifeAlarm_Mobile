@@ -1,0 +1,33 @@
+<div class="page-container">
+  <header>
+    <div>
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>
+      <span class="app-title">Alarmas del Hábito</span>
+    </div>
+  </header>
+  <mat-sidenav-container class="sidenav-container">
+    <img class="img-responsive" src="assets/img/LogoApp.png">
+    <mat-sidenav #sidenav position="start" autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav">
+      <br>
+      <div class="logo-nav">
+        <img src="./assets/img/LogoApp.png">
+        <p style="margin-left: 5%; font-size: large;">Health Life Alarm</p>
+        <p style="margin-left: 5%;">Usuario</p>
+      </div>
+      <hr>
+      <a mat-button routerLink="/page1"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button routerLink="/page3"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button routerLink="/page4"><mat-icon>manage_accounts</mat-icon>Acutalizar Datos</a>
+      <a mat-button routerLink="/page5"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+        Contenido de la página
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
