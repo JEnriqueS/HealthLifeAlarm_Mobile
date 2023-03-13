@@ -4,21 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Hamburger_MenuModule } from './hamburger_menu/hamburger_menu.module';
 import { LoginModule } from './login/login.module';
 import { RecuperarClaveModule } from './recuperarClave/recuperarClave.module';
+import { Mis_habitosModule } from './mis_habitos/mis_habitos.module';
 
 @NgModule({
   declarations: [
     AppComponent
-  ],
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    Hamburger_MenuModule,
     LoginModule,
-    RecuperarClaveModule
+    RecuperarClaveModule,
+    Mis_habitosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
