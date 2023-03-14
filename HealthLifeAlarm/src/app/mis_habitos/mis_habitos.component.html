@@ -26,13 +26,37 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <main>
-        <mat-list>
-          <div><mat-list-item>Ejercicio</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
-          <div><mat-list-item>Meditar</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
-          <div><mat-list-item>Leer</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
-        </mat-list>
+        <div class="content">
+          <mat-list>
+            <div><mat-list-item>Ejercicio</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+            <div><mat-list-item>Meditar</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+            <div><mat-list-item>Leer</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear-alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
+          </mat-list>
+        </div>
         <button type="button" class="botonAppSolo">AGREGAR HÁBITO</button>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+
+<ng-template let-data #myInfoDialog>
+  <div class="content">
+    <h3 mat-dialog-title style="margin-left: 20px; color:'black'">Ingrese el motivo</h3>
+    <div mat-dialog-content class="mat-typography">
+      <mat-radio-group
+        class="example-radio-group">
+        <mat-radio-button class="example-radio-button">No he mejorado el hábito</mat-radio-button>
+        <mat-radio-button class="example-radio-button">No tengo tiempo</mat-radio-button>
+        <mat-radio-button class="example-radio-button">Quiero mejorar otro hábito</mat-radio-button>
+        <mat-radio-button class="example-radio-button">Otro</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <input matInput placeholder="Describa su motivo" style="margin-left: 30px;">
+    </div>
+    <br>
+    <div mat-dialog-actions align="end">
+      <button mat-button (click)="onNoClick()">Cancelar</button>
+      <button mat-button (click)="onNoClick()">Confirmar</button>
+    </div>
+  </div>
+</ng-template>
