@@ -5,11 +5,13 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { AppRoutingModule } from '../app-routing.module';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 const uiModules = [
   MatSidenavModule,
   MatIconModule,
-  MatButtonModule
+  MatButtonModule,
+  MatProgressSpinnerModule
 ];
 
 @NgModule({

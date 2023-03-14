@@ -130,3 +130,38 @@ a {
   margin-left: 5% !important;
   margin-right: 5% !important;
 }
+
+.content {
+  position:absolute !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+button {
+  margin-right: 8px;
+}
+
+::ng-deep .mat-mdc-radio-button .mdc-form-field {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.mdc-button {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+input {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+  font-size: medium;
+  background-color: #F3F3E6;
+  border: 2px;
+  border-radius: 5%;
+  border-color: #F3F3E6;
+  border-style: solid;
+  height: 25px;
+}

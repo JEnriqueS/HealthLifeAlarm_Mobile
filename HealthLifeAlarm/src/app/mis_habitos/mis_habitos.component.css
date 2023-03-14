@@ -77,7 +77,7 @@ a {
 
 .botonAppSolo{
   height: 40px;
-  width: 80%;
+  width: 40%;
   background-color: #3AC43A;
   border-radius: 10px;
   color: white;
@@ -93,4 +93,39 @@ a {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.content {
+  position:absolute !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+button {
+  margin-right: 8px;
+}
+
+::ng-deep .mat-mdc-radio-button .mdc-form-field {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.mdc-button {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+input {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+  font-size: medium;
+  background-color: #F3F3E6;
+  border: 2px;
+  border-radius: 5%;
+  border-color: #F3F3E6;
+  border-style: solid;
+  height: 25px;
 }

@@ -9,6 +9,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatInputModule} from '@angular/material/input';
 
 
 const uiModules = [
@@ -18,7 +21,10 @@ const uiModules = [
   MatDividerModule,
   MatListModule,
   MatChipsModule,
-  MatTableModule
+  MatTableModule,
+  MatFormFieldModule,
+  MatRadioModule,
+  MatInputModule
 ];
 
 @NgModule({

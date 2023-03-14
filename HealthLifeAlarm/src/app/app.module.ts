@@ -12,6 +12,7 @@ import { AlarmasModule } from './alarmas/alarmas.module';
 import { Eliminar_cuentaModule } from './eliminar_cuenta/eliminar_cuenta.module';
 import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
 import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.modu
     AlarmasModule,
     Eliminar_cuentaModule,
     Crear_cuentaModule,
-    Actualizar_datosModule
+    Actualizar_datosModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
