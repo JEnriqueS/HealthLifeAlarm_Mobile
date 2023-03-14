@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>Hello, world!</title>
   </head>
 <body>
@@ -24,13 +26,15 @@
     </div>
     <div class="row">
       <div id="confirmarEliminar">
-        <input type="text" id="crear" name="usuario" placeholder="Nombres(s)">
-        <input type="text" id="crear" name="usuario" placeholder="Apellidos">
-        <input type="text" id="crear" name="usuario" placeholder="Correo">
+        <input matInput type="text" id="crear" name="usuario" placeholder="Nombres(s)">
+        <input matInput type="text" id="crear" name="usuario" placeholder="Apellidos">
+        <input matInput type="text" id="crear" name="usuario" placeholder="Correo">
         <p id="hint">Ingrese un correo electrónico ej: micorreo@mail.com</p>
-        <input type="text" id="crear" name="usuario" placeholder="clave">
+        <input matInput type="text" id="clave" name="usuario" placeholder="clave">
+        <mat-icon style="vertical-align: middle;">remove_red_eye</mat-icon>
         <p id="hint">Ingrese una clave de mínimo 5 dígitos. Incluya mayúsculas, minúsculas, números y símbolos</p>
-        <input type="text" id="crear" name="usuario" placeholder="Confirmar clave">
+        <input matInput type="text" id="clave" name="usuario" placeholder="Confirmar clave">
+        <mat-icon style="vertical-align: middle;">remove_red_eye</mat-icon>
       </div>
     </div>
     <div class="row">
@@ -40,7 +44,7 @@
     </div>
     <div class="row">
       <div class="col-3">
-        <p id="birth">fecha de nacimiento</p>
+        <p id="birth">fecha de nacimiento:</p>
         <input type="text" id="nacimiento" name="usuario" placeholder="AAAA/MM/DD">
       </div>
       <div class="col-3" id="datosOpcionales">
@@ -65,17 +69,14 @@
         </div>
       </div>
       <div class="col-3">
-        <p id="genero">genero</p>
-        <select name="genero" id="generos">
+        <p id="genero">genero:</p>
+        <select name="genero">
           <option value="seleccionar" selected>Seleccione</option>
           <option value="hombre">Hombre</option>
           <option value="mujer">Mujer</option>
         </select>
       </div>
     </div>
-
-
-
     <div class="row" id="buttons">
       <div class="col-6">
         <button type="button" id="btn_volver" [routerLink]="['/']">VOLVER</button>

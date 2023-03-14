@@ -2,13 +2,14 @@ h2{
   text-align: center;
   color: #3AC43A;
   font-size: 30px;
+  margin-top: 5%;
 }
 
 #ingresarDatos{
   text-align: center;
 }
 
-#crear{
+#crear, #clave{
   margin-top: 15px;
   border: none;
   background-color: white;
@@ -38,6 +39,10 @@ p{
   text-align: center;
 }
 
+#clave{
+  width: 57%;
+}
+
 .col-6{
   padding-left: 13%;
 }
@@ -56,7 +61,7 @@ p{
 }
 
 #radioSexo{
-  display: inline;
+  display: block;
   margin-right: 20px;
 }
 
@@ -64,9 +69,11 @@ p{
   display: inline-block;
 }
 
-#generos{
+[name=genero]{
   color: #3AC43A;
   font-size: 0.75em;
+  border: none;
+  height: 35px;
 }
 
 #labelRadio{
@@ -82,12 +89,7 @@ p{
 .col-3{
   display: inline;
   padding: 0px;
-  margin: 0px;
-}
-
-#radio{
-  width: auto;
-  padding-left: 10%;
+  margin-left: 6%;
 }
 
 button{
