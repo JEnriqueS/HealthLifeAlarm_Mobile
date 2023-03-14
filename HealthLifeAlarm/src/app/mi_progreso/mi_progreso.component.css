@@ -63,3 +63,122 @@ a {
   color: #ffffff;
   font-size: large;
 }
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.parentShort {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:initial;
+}
+
+.mat-mdc-standard-chip {
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-elevated-container-color: #3ac43a;
+}
+
+.botonAppSolo{
+  height: 40px;
+  width: 80%;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  font-family: "Perpetua Titling MT", serif;
+  color: #3AC43A;
+  font-size: x-large;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.botonAppDos{
+  height: 40px;
+  width: 40%;
+  background-color: #3AC43A;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  display: inline-block !important;
+  margin-top: 5%;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+
+.content {
+  font-family: "Perpetua Titling MT", serif;
+  color: #3AC43A;
+  font-size: larger;
+  text-align: center;
+}
+
+.mat-mdc-progress-spinner {
+  --mdc-circular-progress-active-indicator-color: #F2CB05
+}
+
+.mat-icon-size {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+  color: #F2CB05;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  z-index: 8;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.container_text{
+  color:#3ac43a;
+  font-size: larger !important;
+  font-family: "Perpetua Titling MT", serif;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+}

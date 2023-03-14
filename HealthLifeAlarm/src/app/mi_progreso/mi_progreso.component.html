@@ -19,14 +19,37 @@
       <hr>
       <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
       <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
-      <a mat-button routerLink="/page3"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
       <a mat-button routerLink="/page4"><mat-icon>manage_accounts</mat-icon>Acutalizar Datos</a>
       <a mat-button routerLink="/page5"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
       <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
     </mat-sidenav>
     <mat-sidenav-content>
       <main>
-        Contenido de la página
+        <div class="content">
+          <div class="container">
+            <div class="box"><mat-spinner mode="determinate" value="40"></mat-spinner></div>
+            <div class="box overlay"><mat-icon class="mat-icon-size">self_improvement</mat-icon></div>
+          </div>
+          <div class="container">
+            <div class="box"><mat-spinner mode="determinate" value="50"></mat-spinner></div>
+            <div class="box overlay"><mat-icon class="mat-icon-size">fitness_center</mat-icon></div>
+          </div>
+          <div class="container">
+            <div class="box"><mat-spinner mode="determinate" value="76"></mat-spinner></div>
+            <div class="box overlay"><mat-icon class="mat-icon-size">local_library</mat-icon></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="container_text">40% Meditación</div>
+          <div class="container_text">50% Ejercicio</div>
+          <div class="container_text">76% Lecturas</div>
+        </div>
+        <br>
+        <div class="content">Ha alcanzado un total de <strong>72</strong> alarmas para mejorar sus hábitos</div>
+        <br>
+        <button type="button" class="botonAppDos" [routerLink]="['/mis_habitos']">VOLVER</button>
+        <button type="button" class="botonAppDos"  [routerLink]="['/estadisticas']">VER ESTADÍSTICAS</button>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>
