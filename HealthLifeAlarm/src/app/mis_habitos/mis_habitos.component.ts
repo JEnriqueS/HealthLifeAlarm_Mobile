@@ -1,10 +1,5 @@
-import { Component, OnInit, Inject, ViewChild, TemplateRef } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-
-export interface DialogData {
-  animal: string;
-  name: string;
-}
+import { Component, OnInit, ViewChild, TemplateRef } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-mis_habitos',
@@ -14,8 +9,6 @@ export interface DialogData {
 export class Mis_habitosComponent implements OnInit {
   public isMenuOpen: boolean = false;
   dialogRef: any;
-  animal: string | undefined;
-  name: string | undefined;
   @ViewChild('myInfoDialog') infoDialog = {} as TemplateRef<string>;
 
   constructor(public dialog: MatDialog) { }

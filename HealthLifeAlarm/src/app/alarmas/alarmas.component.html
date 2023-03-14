@@ -29,10 +29,10 @@
         <div class="page-title">Nombre del Hábito</div>
         <br><br>
         <mat-list>
-          <div class="parentShort"><mat-list-item>Correr</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
-          <div class="parentShort"><mat-list-item>Nadar</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
-          <div class="parentShort"><mat-list-item>Gimnasio</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
-          <div class="parentShort"><mat-list-item>Yoga</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Correr</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Nadar</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Gimnasio</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
+          <div class="parentShort"><mat-list-item>Yoga</mat-list-item><mat-chip><mat-icon [ngStyle]="{'color':'white'}">edit</mat-icon>Modificar</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">delete</mat-icon>Eliminar</mat-chip></div>
         </mat-list>
         <button type="button" class="botonAppDos" [routerLink]="['/mis_habitos']">VOLVER</button>
         <button type="button" class="botonAppDos"  [routerLink]="['/crear-alarma']">CREEAR ALARMA</button>
@@ -40,3 +40,24 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+
+<ng-template let-data #myInfoDialog>
+  <div class="content">
+    <h3 mat-dialog-title style="margin-left: 20px; color:'black'">¿Por qué motivo desea eliminarla?</h3>
+    <div mat-dialog-content>
+      <mat-radio-group>
+        <mat-radio-button value="1">No la estoy usando</mat-radio-button>
+        <mat-radio-button value="2">No he mejorado mi hábito</mat-radio-button>
+        <mat-radio-button value="3">Quiero mejorar otro hábito</mat-radio-button>
+        <mat-radio-button value="4">Otro</mat-radio-button>
+      </mat-radio-group>
+      <br>
+      <input matInput placeholder="Describa su motivo" style="margin-left: 30px;">
+    </div>
+    <br>
+    <div mat-dialog-actions align="end">
+      <button mat-button (click)="onNoClick()">VOLVER</button>
+      <button mat-button (click)="onNoClick()">CONTINUAR</button>
+    </div>
+  </div>
+</ng-template>

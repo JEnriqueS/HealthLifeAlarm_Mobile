@@ -42,13 +42,12 @@
 <ng-template let-data #myInfoDialog>
   <div class="content">
     <h3 mat-dialog-title style="margin-left: 20px; color:'black'">Ingrese el motivo</h3>
-    <div mat-dialog-content class="mat-typography">
-      <mat-radio-group
-        class="example-radio-group">
-        <mat-radio-button class="example-radio-button">No he mejorado el hábito</mat-radio-button>
-        <mat-radio-button class="example-radio-button">No tengo tiempo</mat-radio-button>
-        <mat-radio-button class="example-radio-button">Quiero mejorar otro hábito</mat-radio-button>
-        <mat-radio-button class="example-radio-button">Otro</mat-radio-button>
+    <div mat-dialog-content>
+      <mat-radio-group>
+        <mat-radio-button value="1">No he mejorado el hábito</mat-radio-button>
+        <mat-radio-button value="2">No tengo tiempo</mat-radio-button>
+        <mat-radio-button value="3">Quiero mejorar otro hábito</mat-radio-button>
+        <mat-radio-button value="4">Otro</mat-radio-button>
       </mat-radio-group>
       <br>
       <input matInput placeholder="Describa su motivo" style="margin-left: 30px;">
