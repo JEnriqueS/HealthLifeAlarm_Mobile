@@ -40,14 +40,14 @@ p{
 }
 
 #clave{
-  width: 57%;
+  width: 50%;
 }
 
-.col-6{
-  padding-left: 13%;
+#crear{
+  width: 60%;
 }
 
-#birth, #sexo, #genero{
+#birth, #sexo, #genero, #enfer{
   color: gray;
   font-size: 8px;
 }
@@ -58,6 +58,8 @@ p{
   text-align: center;
   height: 35px;
   border: none;
+  background-color: white;
+  border-radius: 5px;
 }
 
 #radioSexo{
@@ -87,9 +89,10 @@ p{
 }
 
 .col-3{
-  display: inline;
   padding: 0px;
   margin-left: 6%;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 button{
@@ -117,14 +120,29 @@ button{
   box-shadow:inset 2px 2px 2px 2px #1F7E1E;
 }
 
+#enfermedad{
+  display: inline-block;
+}
+
+#btn{
+  padding-left: 10%;
+  display: inline;
+}
+
+label{
+  margin-left: 25%;
+  text-align: left;
+  margin-top: 5px;
+}
+
+#selec{
+  display: inline-block;
+  margin-right: 10px;
+}
+
 body{
   background-color: #F3F3E6;
   margin:0px;
   padding:0px;
   height: 100%;
-}
-
-* {
- font-family: "Perpetua Titling MT", serif;
-
 }

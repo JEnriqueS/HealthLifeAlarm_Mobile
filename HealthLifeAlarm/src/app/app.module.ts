@@ -11,6 +11,7 @@ import { Mi_progresoModule } from './mi_progreso/mi_progreso.module';
 import { AlarmasModule } from './alarmas/alarmas.module';
 import { Eliminar_cuentaModule } from './eliminar_cuenta/eliminar_cuenta.module';
 import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
+import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
     Mi_progresoModule,
     AlarmasModule,
     Eliminar_cuentaModule,
-    Crear_cuentaModule
+    Crear_cuentaModule,
+    Actualizar_datosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
