@@ -16,12 +16,12 @@
         <p style="margin-left: 5%;">Usuario</p>
       </div>
       <hr>
-      <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
-      <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
-      <a mat-button routerLink="/page3"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
-      <a mat-button routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
-      <a mat-button routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
-      <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
+      <a mat-button type="button" routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
+      <a mat-button type="button" routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
+      <a mat-button type="button" routerLink="/page3"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
+      <a mat-button type="button" routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button type="button" routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button type="button" routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
     </mat-sidenav>
     <mat-sidenav-content>
       <main>
@@ -114,10 +114,10 @@
           </div>
           <div class="row" id="buttons">
             <div class="col-6" id="btn">
-              <button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">VOLVER</button>
+              <button mat-button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">VOLVER</button>
             </div>
             <div class="col-6" id="btn">
-              <button type="button" id="btn_confirmar" [routerLink]="['/mis_habitos']">CONFIRMAR</button>
+              <button mat-button type="button" id="btn_confirmar" [routerLink]="['/mis_habitos']">CONFIRMAR</button>
             </div>
           </div>
         </div>

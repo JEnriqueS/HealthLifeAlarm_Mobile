@@ -23,6 +23,8 @@
   min-width: 0;
   padding: 0;
   line-height: normal;
+  background-color: #3AC43A;
+  border: none;
 }
 .page-container header .app-title {
   padding: 0 3px;
@@ -187,7 +189,7 @@ label{
   margin-top: 5px;
 }
 
-button{
+[type=button]{
   height: 40px;
   width: 30%;
   border-radius: 10px;
