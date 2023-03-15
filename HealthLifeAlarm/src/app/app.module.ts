@@ -14,6 +14,7 @@ import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
 import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EstadisticasModule } from './estadisticas/estadisticas.module';
+import { Agregar_ringtoneModule } from './agregar_ringtone/agregar_ringtone.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { EstadisticasModule } from './estadisticas/estadisticas.module';
     Crear_cuentaModule,
     Actualizar_datosModule,
     MatDialogModule,
-    EstadisticasModule
+    EstadisticasModule,
+    Agregar_ringtoneModule
   ],
   providers: [],
   bootstrap: [AppComponent]
