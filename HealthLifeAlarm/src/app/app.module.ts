@@ -16,6 +16,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { Crear_alarmaModule } from './crear_alarma/crear_alarma.module';
 import { EstadisticasModule } from './estadisticas/estadisticas.module';
 import { Agregar_ringtoneModule } from './agregar_ringtone/agregar_ringtone.module';
+import { Modificar_alarmaModule } from './modificar_alarma/modificar_alarma.module';
+import { Establecer_metaModule } from './establecer_meta/establecer_meta.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { Agregar_ringtoneModule } from './agregar_ringtone/agregar_ringtone.modu
     MatDialogModule,
     EstadisticasModule,
     Agregar_ringtoneModule,
-    Crear_alarmaModule
+    Crear_alarmaModule,
+    Modificar_alarmaModule,
+    Establecer_metaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

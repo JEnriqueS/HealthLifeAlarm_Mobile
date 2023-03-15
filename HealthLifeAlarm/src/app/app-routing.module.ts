@@ -12,6 +12,8 @@ import { Crear_alarmaComponent } from './crear_alarma/crear_alarma.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { Agregar_ringtoneComponent } from './agregar_ringtone/agregar_ringtone.component';
 import { Buscar_dispositivoComponent } from './agregar_ringtone/buscar_dispositivo/buscar_dispositivo.component';
+import { Modificar_alarmaComponent } from './modificar_alarma/modificar_alarma.component';
+import { Establecer_metaComponent } from './establecer_meta/establecer_meta.component';
 
 const routes: Routes = [
   {
@@ -67,6 +69,17 @@ const routes: Routes = [
   {
     path: 'agregar_ringtone',
     component: Agregar_ringtoneComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'modificar_alarma',
+    component: Modificar_alarmaComponent,
+    pathMatch: 'full'
+  }
+  ,
+  {
+    path: 'establecer_meta',
+    component: Establecer_metaComponent,
     pathMatch: 'full'
   },
   {
