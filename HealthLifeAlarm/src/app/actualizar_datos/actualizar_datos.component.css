@@ -99,30 +99,34 @@
   background-color: white;
   height: 35px;
   border-radius: 5px;
+}
+
+input.name{
   width: max-content;
 }
 
 #clave{
-  width: 43%;
+  width: 74%;
 }
 
 #crear{
-  width: 48%;
+  width: 80%;
 }
 
 #opcionales{
   color: #3AC43A;
-  font-size: 8px;
+  font-size: 10px;
   margin-top: 15px;
 }
 
 #enfer{
   padding-top: 10px;
+  font-size: 0.5em;
 }
 
-#birth, #sexo, #genero, label, #enfer{
+#birth, #sexo, #genero{
   color: gray;
-  font-size: 8px;
+  font-size: 0.5em;
   text-align: justify;
 }
 
@@ -162,9 +166,12 @@
   margin-top: 15px;
 }
 
-#selec{
-  display: inline-block;
-  margin-right: 10px;
+label{
+
+  font-size: 0.6em;
+  margin-left: 10%;
+  text-align: left;
+  margin-top: 5px;
 }
 
 [name=genero]{
@@ -186,12 +193,6 @@ p{
 
 input [name=name], label {
   display:block;
-}
-
-label{
-  margin-left: 25%;
-  text-align: left;
-  margin-top: 5px;
 }
 
 [type=button]{

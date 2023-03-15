@@ -5,8 +5,9 @@ h2{
   margin-top: 5%;
 }
 
-#ingresarDatos{
+.ingresarDatos{
   text-align: center;
+  margin-bottom: 0px;
 }
 
 #crear, #clave{
@@ -20,7 +21,6 @@ h2{
 #hint{
   color: gray;
   font-size: 8px;
-  margin-bottom: 0px;
 }
 
 #opcionales{
@@ -33,6 +33,7 @@ p{
   color: #3AC43A;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #confirmarEliminar{
@@ -40,11 +41,11 @@ p{
 }
 
 #clave{
-  width: 50%;
+  width: 63%;
 }
 
 #crear{
-  width: 60%;
+  width: 70%;
 }
 
 #birth, #sexo, #genero, #enfer{
