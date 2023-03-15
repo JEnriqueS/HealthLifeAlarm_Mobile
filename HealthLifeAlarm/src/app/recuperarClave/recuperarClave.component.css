@@ -16,12 +16,19 @@ h2{
 
 #textfield{
   text-align: center;
-  margin-top: 15%;
+  margin-top: 20%;
+  position: relative;
 }
 
 #clave{
   text-align: left;
   color: #AFAFAF;
+}
+
+#buttons{
+  position:relative;
+  margin-top: 20%;
+
 }
 
 p{
@@ -70,3 +77,7 @@ button{
 body{
   background-color: #F3F3E6;
 }
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }

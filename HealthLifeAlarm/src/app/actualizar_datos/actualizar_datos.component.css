@@ -97,8 +97,9 @@
   margin-top: 10px;
   border: none;
   background-color: white;
-  height: 30px;
+  height: 35px;
   border-radius: 5px;
+  width: max-content;
 }
 
 #clave{
@@ -113,6 +114,10 @@
   color: #3AC43A;
   font-size: 8px;
   margin-top: 15px;
+}
+
+#enfer{
+  padding-top: 10px;
 }
 
 #birth, #sexo, #genero, label, #enfer{
@@ -132,7 +137,7 @@
 }
 
 #datosOpcionales{
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #radioSexo{
@@ -199,8 +204,9 @@ label{
 }
 
 #buttons{
+  position: relative;
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 #btn_volver{
@@ -218,5 +224,13 @@ label{
 #enfermedad{
   display: inline-block;
   margin-left: 10%;
+}
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }
+
+ .material-icons{
+    font-family: 'Material Icons' !important;
 }
 

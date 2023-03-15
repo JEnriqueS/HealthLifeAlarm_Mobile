@@ -32,7 +32,7 @@
         <input type="text" id="clave" name="clave" value="Email">
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="buttons">
       <div class="col-6">
         <button type="button" id="btn_volver" [routerLink]="['/']">VOLVER</button>
       </div>
@@ -43,7 +43,7 @@
 
     <ng-template let-data #msjConfirmacionDialog>
       <div class="content">
-        <h3 mat-dialog-title style="font-size: 1.25em; color:'#3AC43A'; text-align: center;">Se ha restablecido su clave. Verifique su correo electrónico</h3>
+        <h3 mat-dialog-title style="font-size: 1em; color:'#3AC43A'; text-align: center;">Se ha restablecido su clave. Verifique su correo electrónico</h3>
         <br>
         <div mat-dialog-actions align="end">
           <button mat-button (click)="onNoClick()" [routerLink]="['/']" style="margin-right: 28%; width: 50%; background-color:'#3AC43A'; color:white">ACEPTAR</button>

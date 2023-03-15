@@ -53,9 +53,9 @@ p{
 }
 
 #nacimiento{
-  width: 100px;
+  width: 90%;
   font-size: 0.75em;
-  text-align: center;
+  text-align: left;
   height: 35px;
   border: none;
   background-color: white;
@@ -91,6 +91,8 @@ button{
 
 #buttons{
   margin-bottom: 5%;
+  position: relative;
+  margin-top: 10%;
 }
 
 #btn_volver{
@@ -139,3 +141,7 @@ input[type=radio]{
 #lista{
   text-align: center;
 }
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }

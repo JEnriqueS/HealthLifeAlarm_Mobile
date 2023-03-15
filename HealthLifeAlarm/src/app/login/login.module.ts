@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
 import { AppRoutingModule } from '../app-routing.module';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule} from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 const uiModules = [
-  MatInputModule
+  MatInputModule,
+  MatIconModule
 ];
 
 
