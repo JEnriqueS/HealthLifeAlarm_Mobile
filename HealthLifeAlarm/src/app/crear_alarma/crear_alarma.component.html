@@ -20,8 +20,8 @@
       <a mat-button routerLink="/mis_habitos"><mat-icon>home</mat-icon>Home</a>
       <a mat-button routerLink="/mis_habitos"><mat-icon>fitness_center</mat-icon>Mis Hábitos</a>
       <a mat-button routerLink="/mi_progreso"><mat-icon>bar_chart</mat-icon>Mi Progreso</a>
-      <a mat-button routerLink="/page4"><mat-icon>manage_accounts</mat-icon>Acutalizar Datos</a>
-      <a mat-button routerLink="/page5"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
+      <a mat-button routerLink="/actualizar_datos"><mat-icon>manage_accounts</mat-icon>Actualizar Datos</a>
+      <a mat-button routerLink="/eliminar_cuenta"><mat-icon>delete_forever</mat-icon>Eliminar Cuenta</a>
       <a mat-button routerLink=""><mat-icon>exit_to_app</mat-icon>Cerrar Sesión</a>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -53,7 +53,7 @@
         </div>
         <br>
 
-        <div class="alarm_settings_row"><div class="label_action_button">Ringtone</div> <div class="action_button"><mat-icon>add_circle</mat-icon></div></div>
+        <div class="alarm_settings_row"><div class="label_action_button">Ringtone</div> <div class="action_button"><mat-icon [routerLink]="['/agregar_ringtone']">add_circle</mat-icon></div></div>
         <div class="alarm_settings_row"><div class="label_action_button">Vibración</div> <div class="action_button"><mat-slide-toggle></mat-slide-toggle></div></div>
         <div class="alarm_settings_row"><div class="label_action_button">Mensaje de audio</div> <div class="action_button"><mat-icon (click)="openMensajeAudioDialog()">add_circle</mat-icon></div></div>
         <div class="alarm_settings_row"><div class="label_action_button">Mensaje de texto</div> <div class="action_button"><mat-icon (click)="openTextoMotivacionalDialog()">add_circle</mat-icon></div></div>

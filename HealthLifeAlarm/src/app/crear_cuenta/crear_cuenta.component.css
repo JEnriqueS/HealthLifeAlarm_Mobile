@@ -25,7 +25,7 @@ h2{
 
 #opcionales{
   color: #3AC43A;
-  font-size: 8px;
+  font-size: 10px;
   margin-top: 15px;
 }
 
@@ -49,26 +49,17 @@ p{
 
 #birth, #sexo, #genero, #enfer{
   color: gray;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 #nacimiento{
-  width: 100px;
+  width: 90%;
   font-size: 0.75em;
-  text-align: center;
+  text-align: left;
   height: 35px;
   border: none;
   background-color: white;
   border-radius: 5px;
-}
-
-#radioSexo{
-  display: block;
-  margin-right: 20px;
-}
-
-#lista{
-  display: inline-block;
 }
 
 [name=genero]{
@@ -78,21 +69,15 @@ p{
   height: 35px;
 }
 
-#labelRadio{
+label{
   color: #3AC43A;
-  font-size: 8px;
-  margin-top: 15px;
-}
-
-#datosOpcionales{
-  margin-left: 10%;
+  font-size: 0.75em;
+  font-size: 10px;
 }
 
 .col-3{
-  padding: 0px;
-  margin-left: 6%;
   display: inline-block;
-  margin-top: 10px;
+  margin-right: 10px;
 }
 
 button{
@@ -106,6 +91,8 @@ button{
 
 #buttons{
   margin-bottom: 5%;
+  position: relative;
+  margin-top: 10%;
 }
 
 #btn_volver{
@@ -129,12 +116,6 @@ button{
   display: inline;
 }
 
-label{
-  margin-left: 25%;
-  text-align: left;
-  margin-top: 5px;
-}
-
 #selec{
   display: inline-block;
   margin-right: 10px;
@@ -146,3 +127,21 @@ body{
   padding:0px;
   height: 100%;
 }
+
+input[type=radio]{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+::placeholder{
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+#lista{
+  text-align: center;
+}
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }

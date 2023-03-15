@@ -17,13 +17,15 @@ h1{
 }
 
 #textfield{
+  position: relative;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 50%;
 }
 
 input::placeholder {
   text-align: left;
   color: #AFAFAF;
+  padding-left: 5px;
 }
 
 p{
@@ -34,13 +36,14 @@ p{
 input{
   border: none;
   background-color: white;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
 }
 
 #olvideClave{
+  position: relative;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 60%;
 }
 
 .col-6{
@@ -59,6 +62,8 @@ button{
   font-size: 0.75em;
   font-weight: bold;
   box-shadow:inset 2px 2px 2px 2px #1F7E1E;
+  position: relative;
+  margin-top: 80%;
 }
 
 body{

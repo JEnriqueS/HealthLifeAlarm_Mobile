@@ -43,32 +43,26 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-3">
+      <div class="col-4">
         <p id="birth">fecha de nacimiento:</p>
         <input type="text" id="nacimiento" name="usuario" placeholder="AAAA/MM/DD">
       </div>
-      <div class="col-3" id="datosOpcionales">
+      <div class="col-4" id="datosOpcionales">
         <div>
           <p id="sexo">Sexo:</p>
         </div>
-        <div id="radioSexo">
+        <div>
           <div id="lista">
-            <input type="radio">
+            <input type="radio" id="fem">
+            <label for="fem">Femenino</label>
           </div>
           <div id="lista">
-            <p id="labelRadio">Femenino</p>
-          </div>
-        </div>
-        <div id="radioSexo">
-          <div id="lista">
-            <input type="radio">
-          </div>
-          <div id="lista">
-            <p id="labelRadio">Masculino</p>
+            <input type="radio" id="mas">
+            <label for="mas">Masculino</label>
           </div>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-4">
         <p id="genero">genero:</p>
         <select name="genero">
           <option value="seleccionar" selected>Seleccione</option>
@@ -76,6 +70,8 @@
           <option value="mujer">Mujer</option>
         </select>
       </div>
+    </div>
+    <div class="row">
       <div>
         <div class="col-6" id="enfermedad">
           <div>
@@ -86,7 +82,7 @@
               <input type="radio" name="no">
             </div>
             <div class="col-3">
-              <label for="no" style="color: #3AC43A;">No</label>
+              <label for="no">No</label>
             </div>
           </div>
           <div id="selec">
@@ -94,7 +90,7 @@
               <input type="radio" name="si">
             </div>
             <div class="col-3">
-              <label for="no" style="color: #3AC43A;">Si</label>
+              <label for="no">Si</label>
             </div>
           </div>
         </div>

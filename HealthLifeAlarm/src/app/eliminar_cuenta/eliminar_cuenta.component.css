@@ -16,7 +16,8 @@ h2{
 
 #radios{
   text-align: center;
-  margin-top: 12%;
+  margin-top: 30%;
+  position:relative
 }
 
 label{
@@ -46,7 +47,8 @@ input{
 
 #confirmarEliminar{
   text-align: center;
-  margin-top: 10%;
+  margin-top: 30%;
+  position: relative;
 }
 
 .col-6{

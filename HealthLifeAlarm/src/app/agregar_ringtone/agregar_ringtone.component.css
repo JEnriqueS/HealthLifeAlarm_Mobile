@@ -121,7 +121,7 @@ h2{
 }
 
 mat-list-option[aria-selected="true"] {
-  background: #F2CB05;
+  background: #d4c05c;
 }
 
 mat-list-option {
@@ -132,6 +132,14 @@ mat-list-item-content {
   background: #3AC43A;
 }
 
+#buttons{
+  position: relative;
+  margin-top: 10%;
+}
+
+* {
+  font-family: "Perpetua Titling MT", serif;
+ }
 
 
 

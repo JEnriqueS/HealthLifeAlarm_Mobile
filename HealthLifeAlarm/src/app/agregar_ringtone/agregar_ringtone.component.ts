@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Agregar_ringtoneComponent implements OnInit {
   public isMenuOpen: boolean = false;
-  listOfAudios: string[] = ['Alarm clock', 'Barium', 'Buzzer Alarm', 'Cesium', 'Dewdrops', 'Morning', 'Osmium'];
+  listOfAudios: string[] = ['Alarm clock', 'Barium', 'Buzzer Alarm', 'Cesium', 'Dewdrops', 'Morning', 'Osmium', 'Platinum', 'Scandium'];
 
   constructor() { }
 

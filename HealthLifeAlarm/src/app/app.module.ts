@@ -18,6 +18,7 @@ import { EstadisticasModule } from './estadisticas/estadisticas.module';
 import { Agregar_ringtoneModule } from './agregar_ringtone/agregar_ringtone.module';
 import { Modificar_alarmaModule } from './modificar_alarma/modificar_alarma.module';
 import { Establecer_metaModule } from './establecer_meta/establecer_meta.module';
+import { Crear_habitoModule } from './crear_habito/crear_habito.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { Establecer_metaModule } from './establecer_meta/establecer_meta.module'
     Agregar_ringtoneModule,
     Crear_alarmaModule,
     Modificar_alarmaModule,
-    Establecer_metaModule
+    Establecer_metaModule,
+    Crear_habitoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

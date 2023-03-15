@@ -33,7 +33,7 @@
             <div><mat-list-item>Leer</mat-list-item></div><div class="parent"><mat-chip [routerLink]="['/crear_alarma']"><mat-icon [ngStyle]="{'color':'white'}">add_circle</mat-icon>Crear alarma</mat-chip> <mat-chip [routerLink]="['/alarmas']"><mat-icon [ngStyle]="{'color':'white'}">alarm</mat-icon> Alarmas</mat-chip> <mat-chip (click)="openInfoDialog()"><mat-icon [ngStyle]="{'color':'white'}">do_not_disturb_on</mat-icon> Eliminar</mat-chip></div>
           </mat-list>
         </div>
-        <button type="button" class="botonAppSolo">AGREGAR HÁBITO</button>
+        <button type="button" class="botonAppSolo" [routerLink]="['/crear_habito']">AGREGAR HÁBITO</button>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>

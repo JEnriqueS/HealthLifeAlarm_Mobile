@@ -16,12 +16,19 @@ h2{
 
 #textfield{
   text-align: center;
-  margin-top: 15%;
+  margin-top: 20%;
+  position: relative;
 }
 
 #clave{
   text-align: left;
   color: #AFAFAF;
+}
+
+#buttons{
+  position:relative;
+  margin-top: 20%;
+
 }
 
 p{
@@ -72,5 +79,5 @@ body{
 }
 
 * {
- font-family: "Perpetua Titling MT", serif;
-}
+  font-family: "Perpetua Titling MT", serif;
+ }

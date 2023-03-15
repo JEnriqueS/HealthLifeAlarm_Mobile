@@ -17,7 +17,7 @@
       <button mat-button class="menu-button" (click)="sidenav.toggle()">
         <mat-icon [ngStyle]="{'color':'white'}">{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
       </button>
-      <span class="app-title">Agregar ringtone de alarma</span>
+      <span class="app-title">Crear hábito</span>
     </div>
   </header>
   <mat-sidenav-container class="sidenav-container">
@@ -40,31 +40,34 @@
       <main>
         <div class="container">
           <div class="row">
-            <div class="col-2">
-              <button mat-fab routerLink="/buscar_dispositivo" style="background-color: #006400;">
-                <mat-icon>add</mat-icon>
-              </button>
+            <div class="col">
+              <h2>Seleccione el hábito que desea mejorar:</h2>
             </div>
-            <div class="col-10">
-              <h2>Buscar en el dispositivo</h2>
+          </div>
+          <div class="row" id="habitos">
+            <mat-list>
+              <mat-selection-list #audios [multiple]="false">
+                <mat-list-option *ngFor="let audio of listOfAudios" [value]="audio">
+                  {{audio}}
+                </mat-list-option>
+              </mat-selection-list>
+            </mat-list>
+          </div>
+          <div class="row">
+            <div>
+              <input matInput type="text" id="nuevoHabito" placeholder="Nombre del hábito">
             </div>
           </div>
           <div class="row">
-            <mat-selection-list #audios [multiple]="false">
-              <mat-list-option *ngFor="let audio of listOfAudios" [value]="audio">
-                {{audio}}
-              </mat-list-option>
-            </mat-selection-list>
-          </div>
-          <div class="row" id="buttons">
             <div class="col-6" id="btn">
-              <button mat-button type="button" id="btn_volver" [routerLink]="['/crear_alarma']">VOLVER</button>
+              <button mat-button type="button" id="btn_volver" [routerLink]="['/mis_habitos']">VOLVER</button>
             </div>
             <div class="col-6" id="btn">
-              <button mat-button type="button" id="btn_confirmar" [routerLink]="['/crear_alarma']">CONFIRMAR</button>
+              <button mat-button type="button" id="btn_confirmar" [routerLink]="['/establecer_meta']">CONFIRMAR</button>
             </div>
           </div>
         </div>
+
 
 
 
