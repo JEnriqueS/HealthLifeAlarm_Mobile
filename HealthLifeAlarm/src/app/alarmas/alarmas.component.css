@@ -107,10 +107,8 @@ a {
   font-size: x-large;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  position: relative;
+  text-align: center;
 }
 
 
@@ -138,6 +136,7 @@ a {
   margin-right: auto;
   color:#3ac43a;
   font-family: "Perpetua Titling MT", serif !important;
+  left: 5px;
 }
 
 button {
