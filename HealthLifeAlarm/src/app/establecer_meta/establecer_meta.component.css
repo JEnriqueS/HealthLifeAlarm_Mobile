@@ -258,3 +258,13 @@ textarea {
 .rec_chip {
   --mdc-chip-elevated-container-color: #3ac43a;
 }
+
+.mdc-button {
+  color:#3ac43a !important;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+button {
+  margin-right: 8px;
+  font-family: "Perpetua Titling MT", serif !important;
+}

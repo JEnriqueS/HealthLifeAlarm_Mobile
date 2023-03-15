@@ -4,10 +4,12 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 .page-container a {
   color: inherit;
   text-decoration: none;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 .page-container header {
   background: #3ac43a;
@@ -33,12 +35,14 @@
 .sidenav-container .sidenav {
   min-width: 80%;
   color:#3ac43a;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 .sidenav-container .sidenav a {
   display: block;
   padding: 6px 24px;
   width: 100%;
   text-align: left;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 .sidenav-container main {
   padding: 18px 24px;
@@ -51,11 +55,11 @@
 }
 
 p {
-  font-family: "Perpetua Titling MT", serif;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 
 a {
-  font-family: "Perpetua Titling MT", serif;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 
 .app-title {
@@ -99,6 +103,7 @@ a {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-family: "Perpetua Titling MT", serif !important;
 }
 
 .page-title {
@@ -127,6 +132,7 @@ a {
   margin-top: 5%;
   margin-left: 5% !important;
   margin-right: 5% !important;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 
 .content {
@@ -141,6 +147,7 @@ a {
 
 button {
   margin-right: 8px;
+  font-family: "Perpetua Titling MT", serif !important;
 }
 
 ::ng-deep .mat-mdc-radio-button .mdc-form-field {
@@ -163,4 +170,15 @@ input {
   border-color: #F3F3E6;
   border-style: solid;
   height: 25px;
+}
+
+::ng-deep .mdc-list-item__primary-text {
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.mat-mdc-standard-chip {
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-elevated-container-color: #3AC43A;
+  margin: 0.5%;
+  font-family: "Perpetua Titling MT", serif;
 }
