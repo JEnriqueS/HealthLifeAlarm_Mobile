@@ -14,6 +14,7 @@ import { Agregar_ringtoneComponent } from './agregar_ringtone/agregar_ringtone.c
 import { Buscar_dispositivoComponent } from './agregar_ringtone/buscar_dispositivo/buscar_dispositivo.component';
 import { Modificar_alarmaComponent } from './modificar_alarma/modificar_alarma.component';
 import { Establecer_metaComponent } from './establecer_meta/establecer_meta.component';
+import { Crear_habitoComponent } from './crear_habito/crear_habito.component';
 
 const routes: Routes = [
   {
@@ -85,6 +86,11 @@ const routes: Routes = [
   {
     path: 'buscar_dispositivo',
     component: Buscar_dispositivoComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'crear_habito',
+    component: Crear_habitoComponent,
     pathMatch: 'full'
   }
 ];
