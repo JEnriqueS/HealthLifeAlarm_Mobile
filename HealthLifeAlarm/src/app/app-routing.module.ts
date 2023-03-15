@@ -11,6 +11,7 @@ import { Actualizar_datosComponent } from './actualizar_datos/actualizar_datos.c
 import { Crear_alarmaComponent } from './crear_alarma/crear_alarma.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { Agregar_ringtoneComponent } from './agregar_ringtone/agregar_ringtone.component';
+import { Buscar_dispositivoComponent } from './agregar_ringtone/buscar_dispositivo/buscar_dispositivo.component';
 import { Modificar_alarmaComponent } from './modificar_alarma/modificar_alarma.component';
 import { Establecer_metaComponent } from './establecer_meta/establecer_meta.component';
 
@@ -79,6 +80,11 @@ const routes: Routes = [
   {
     path: 'establecer_meta',
     component: Establecer_metaComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'buscar_dispositivo',
+    component: Buscar_dispositivoComponent,
     pathMatch: 'full'
   }
 ];
