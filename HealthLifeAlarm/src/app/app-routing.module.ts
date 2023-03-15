@@ -11,6 +11,7 @@ import { Actualizar_datosComponent } from './actualizar_datos/actualizar_datos.c
 import { Crear_alarmaComponent } from './crear_alarma/crear_alarma.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { Agregar_ringtoneComponent } from './agregar_ringtone/agregar_ringtone.component';
+import { Modificar_alarmaComponent } from './modificar_alarma/modificar_alarma.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,11 @@ const routes: Routes = [
   {
     path: 'agregar_ringtone',
     component: Agregar_ringtoneComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'modificar_alarma',
+    component: Modificar_alarmaComponent,
     pathMatch: 'full'
   }
 ];
