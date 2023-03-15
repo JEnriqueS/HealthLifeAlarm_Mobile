@@ -121,7 +121,7 @@ a {
   border-radius: 10px;
   color: white;
   border: none;
-  font-size: 0.75em;
+  font-size: 0.70em;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow:inset 2px 2px 2px 2px #1F7E1E;
@@ -143,17 +143,17 @@ a {
 }
 
 .mat-icon-size {
-  font-size: 80px;
-  height: 80px;
-  width: 80px;
+  font-size: 70px;
+  height: 70px;
+  width: 70px;
   color: #F2CB05;
 }
 
 .container {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  margin: 10px;
+  margin: 7px;
   display: inline-block;
 }
 
@@ -176,9 +176,9 @@ a {
   font-size: larger !important;
   font-family: "Perpetua Titling MT", serif;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   position: relative;
-  margin: 10px;
+  margin: 7px;
   display: inline-block;
 }
