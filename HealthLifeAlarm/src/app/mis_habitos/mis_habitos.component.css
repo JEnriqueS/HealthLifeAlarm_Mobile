@@ -36,12 +36,12 @@
 }
 .sidenav-container .sidenav a {
   display: block;
-  padding: 6px 24px;
+  padding: 6px 12px;
   width: 100%;
   text-align: left;
 }
 .sidenav-container main {
-  padding: 18px 24px;
+  padding: 18px 12px;
 }
 
 .logo-nav img {
@@ -96,13 +96,11 @@ a {
 }
 
 .content {
-  position:absolute !important;
-  display: block;
   margin-left: 1%;
-  margin-right: 1%;
+  margin-right: 0;
   color:#3ac43a;
   font-family: "Perpetua Titling MT", serif !important;
-  left: 5px;
+  left: 1px;
 }
 
 button {
@@ -129,4 +127,20 @@ input {
   border-color: #F3F3E6;
   border-style: solid;
   height: 25px;
+}
+
+button {
+  margin-right: 8px;
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+::ng-deep .mdc-list-item__primary-text {
+  font-family: "Perpetua Titling MT", serif !important;
+}
+
+.mat-mdc-standard-chip {
+  --mdc-chip-label-text-color: #fff;
+  --mdc-chip-elevated-container-color: #3AC43A;
+  margin: 0.1%;
+  font-family: "Perpetua Titling MT", serif;
 }

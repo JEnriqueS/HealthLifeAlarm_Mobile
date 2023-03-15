@@ -182,3 +182,8 @@ a {
   margin: 7px;
   display: inline-block;
 }
+
+button {
+  margin-right: 8px;
+  font-family: "Perpetua Titling MT", serif !important;
+}
