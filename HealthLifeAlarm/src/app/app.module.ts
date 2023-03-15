@@ -13,6 +13,7 @@ import { Eliminar_cuentaModule } from './eliminar_cuenta/eliminar_cuenta.module'
 import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
 import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { Crear_alarmaModule } from './crear_alarma/crear_alarma.module';
 import { EstadisticasModule } from './estadisticas/estadisticas.module';
 import { Agregar_ringtoneModule } from './agregar_ringtone/agregar_ringtone.module';
 
@@ -34,7 +35,8 @@ import { Agregar_ringtoneModule } from './agregar_ringtone/agregar_ringtone.modu
     Actualizar_datosModule,
     MatDialogModule,
     EstadisticasModule,
-    Agregar_ringtoneModule
+    Agregar_ringtoneModule,
+    Crear_alarmaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
