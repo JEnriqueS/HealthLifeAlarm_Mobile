@@ -9,6 +9,7 @@ import { RecuperarClaveComponent } from './recuperarClave/recuperarClave.compone
 import { Eliminar_cuentaComponent } from './eliminar_cuenta/eliminar_cuenta.component';
 import { Actualizar_datosComponent } from './actualizar_datos/actualizar_datos.component';
 import { Crear_alarmaComponent } from './crear_alarma/crear_alarma.component';
+import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 
 const routes: Routes = [
   {
@@ -54,6 +55,11 @@ const routes: Routes = [
   {
     path: 'crear_alarma',
     component: Crear_alarmaComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'estadisticas',
+    component: EstadisticasComponent,
     pathMatch: 'full'
   }
 ];

@@ -14,6 +14,7 @@ import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
 import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Crear_alarmaModule } from './crear_alarma/crear_alarma.module';
+import { EstadisticasModule } from './estadisticas/estadisticas.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { Crear_alarmaModule } from './crear_alarma/crear_alarma.module';
     Crear_cuentaModule,
     Actualizar_datosModule,
     MatDialogModule,
-    Crear_alarmaModule
+    Crear_alarmaModule,
+    EstadisticasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
