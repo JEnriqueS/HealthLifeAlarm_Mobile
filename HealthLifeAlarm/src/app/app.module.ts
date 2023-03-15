@@ -13,6 +13,7 @@ import { Eliminar_cuentaModule } from './eliminar_cuenta/eliminar_cuenta.module'
 import { Crear_cuentaModule } from './crear_cuenta/crear_cuenta.module';
 import { Actualizar_datosModule } from './actualizar_datos/actualizar_datos.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { EstadisticasModule } from './estadisticas/estadisticas.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     Eliminar_cuentaModule,
     Crear_cuentaModule,
     Actualizar_datosModule,
-    MatDialogModule
+    MatDialogModule,
+    EstadisticasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

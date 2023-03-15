@@ -8,6 +8,7 @@ import { Crear_cuentaComponent } from './crear_cuenta/crear_cuenta.component';
 import { RecuperarClaveComponent } from './recuperarClave/recuperarClave.component';
 import { Eliminar_cuentaComponent } from './eliminar_cuenta/eliminar_cuenta.component';
 import { Actualizar_datosComponent } from './actualizar_datos/actualizar_datos.component';
+import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 
 const routes: Routes = [
   {
@@ -48,6 +49,11 @@ const routes: Routes = [
   {
     path: 'actualizar_datos',
     component: Actualizar_datosComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'estadisticas',
+    component: EstadisticasComponent,
     pathMatch: 'full'
   }
 ];
