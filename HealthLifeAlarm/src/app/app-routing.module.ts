@@ -11,6 +11,7 @@ import { Actualizar_datosComponent } from './actualizar_datos/actualizar_datos.c
 import { Crear_alarmaComponent } from './crear_alarma/crear_alarma.component';
 import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 import { Agregar_ringtoneComponent } from './agregar_ringtone/agregar_ringtone.component';
+import { Buscar_dispositivoComponent } from './agregar_ringtone/buscar_dispositivo/buscar_dispositivo.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,11 @@ const routes: Routes = [
   {
     path: 'agregar_ringtone',
     component: Agregar_ringtoneComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'buscar_dispositivo',
+    component: Buscar_dispositivoComponent,
     pathMatch: 'full'
   }
 ];

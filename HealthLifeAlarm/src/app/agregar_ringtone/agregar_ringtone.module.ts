@@ -7,13 +7,16 @@ import { MatInputModule} from '@angular/material/input';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
+import { Buscar_dispositivoComponent } from './buscar_dispositivo/buscar_dispositivo.component';
 
 const uiModules = [
   MatIconModule,
   MatInputModule,
   MatSidenavModule,
   MatButtonModule,
-  MatListModule
+  MatListModule,
+  MatChipsModule
 ]
 
 @NgModule({
@@ -22,7 +25,7 @@ const uiModules = [
     AppRoutingModule,
     uiModules
   ],
-  declarations: [Agregar_ringtoneComponent],
-  exports: [Agregar_ringtoneComponent, uiModules]
+  declarations: [Agregar_ringtoneComponent, Buscar_dispositivoComponent],
+  exports: [Agregar_ringtoneComponent, Buscar_dispositivoComponent, uiModules]
 })
 export class Agregar_ringtoneModule { }
