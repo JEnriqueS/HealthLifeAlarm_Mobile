@@ -42,6 +42,7 @@
   padding: 6px 24px;
   width: 100%;
   text-align: left;
+  margin: 0px;
 }
 .sidenav-container main {
   padding: 18px 24px;
@@ -115,11 +116,6 @@
   box-shadow:inset 2px 2px 2px 2px #1F7E1E;
 }
 
-mat-icon{
-  color: #3AC43A;
-  background-color: #3AC43A;
-}
-
 nav{
   color: #3AC43A;
 }
@@ -148,4 +144,8 @@ input{
 
 * {
   font-family: "Perpetua Titling MT", serif !important;
+}
+
+::ng-deep .material-icons{
+  font-family: 'Material Icons' !important;
 }
