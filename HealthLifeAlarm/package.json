@@ -1,13 +1,21 @@
 {
-  "name": "health-life-alarm",
-  "version": "0.0.0",
+  "name": "com.healthlife.alarm",
+  "displayName": "HelthLifeAlarmApp",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "author": "John Gutierrez - Jorge Suárez",
+  "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
@@ -40,6 +48,12 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.9.4"
+    "typescript": "~4.9.4",
+    "cordova-android": "^10.1.2"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
   }
 }
